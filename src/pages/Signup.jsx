@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import "./Signup.css";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../config";
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Signup = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post("http://localhost:5000/api/auth/register", {
+            const res = await axios.post(`${API_URL}/api/auth/register`, {
                 name,
                 email,
                 password,

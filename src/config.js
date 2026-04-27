@@ -1,0 +1,1 @@
+export const API_URL = "https://tech-academy-api-blb0.onrender.com";
