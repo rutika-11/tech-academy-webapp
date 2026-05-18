@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./AdminDashboard.css";
 
-const API_URL = "https://tech-academy-api-blb0.onrender.com/api/courses";
+const API_URL = "http://localhost:5000/api/courses";
 
 const AdminDashboard = () => {
   const [courses, setCourses] = useState([]);
